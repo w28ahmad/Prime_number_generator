@@ -1,12 +1,13 @@
 // Example program
 #include <iostream>
+#include <cmath>
 
 bool is_prime(unsigned int n);
 int main();
 int next_prime();
 
 bool is_prime(unsigned int n) {
-	for (unsigned int k { 2 }; k < (n); ++k) {
+	for (unsigned int k { 2 }; k <= sqrt(n); ++k) {
 
 		if ((n % k) == 0) {
 			return false;
@@ -29,3 +30,4 @@ int main() {
 	next_prime();
 	return 0;
 }
+
