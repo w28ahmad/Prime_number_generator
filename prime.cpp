@@ -27,4 +27,5 @@ int next_prime() {
 
 int main() {
 	next_prime();
+	return 0;
 }
